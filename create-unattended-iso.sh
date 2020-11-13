@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # file names & paths
-tmp="$HOME"  # destination folder to store the final iso file
+#tmp="$HOME"  # destination folder to store the final iso file
+tmp="/home/bryan/ubuntu-unattended/ISOs"
 hostname="ubuntu"
 currentuser="$( whoami)"
 
@@ -136,7 +137,7 @@ fi
 
 # ask the user questions about his/her preferences
 read -ep " please enter your preferred timezone: " -i "${timezone}" timezone
-read -ep " please enter your preferred username: " -i "netson" username
+read -ep " please enter your preferred username: " -i "bdzadmin" username
 read -sp " please enter your preferred password: " password
 printf "\n"
 read -sp " confirm your preferred password: " password2
