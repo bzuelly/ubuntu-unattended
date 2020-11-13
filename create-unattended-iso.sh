@@ -2,7 +2,7 @@
 
 # file names & paths
 #tmp="$HOME"  # destination folder to store the final iso file
-tmp="/home/bryan/ubuntu-unattended/ISOs"
+tmp="/home/bryan/ISOs"
 hostname="ubuntu"
 currentuser="$( whoami)"
 
