@@ -84,8 +84,10 @@ sed -i "s@ubuntu.ubuntu@$fqdn@g" /etc/hosts
 sed -i "s@ubuntu@$hostname@g" /etc/hosts
 hostname "$hostname"
 
+echo "Updating, upgrading, dist-upgrading, autoremoving, and even purging along with installing openssh-server"
 # update repos
 apt-get -y update
+apt-get -y install openssh-server
 apt-get -y upgrade
 apt-get -y dist-upgrade
 apt-get -y autoremove
